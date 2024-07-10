@@ -61,13 +61,13 @@ for(let i=0; i<5; i++)
     }
     
     // else if statements
-    
+    // logical operators - OR || and AND &&
     const newestPassword = 'p@ss';
-    if(newestPassword.length > 12)
+    if(newestPassword.length > 12 && newestPassword.includes('@'))
     {
         console.log('that password is might strong');
     }
-    else if(newestPassword.length >= 8)
+    else if(newestPassword.length >= 8 || password.includes('@'))
     {
         console.log('that password is long enough!');
     }
@@ -75,6 +75,94 @@ for(let i=0; i<5; i++)
     {
         console.log('password is not long enough!');
     }
+
+    //logical NOT (!)
+    let user = false
+    if(!user)
+    {
+        console.log('you must be logged in to continue....');
+    }
+
+console.log(!true);
+console.log(!false);
+
+// break and continue
+const scores = [50, 25, 0, 30, 100, 20, 10];
+for(let i=0; i<scores.length; i++)
+{
+    if(scores[i] === 0)
+    {
+        continue;
+    }
+    console.log('your score: ', scores[i]);  
+    if(scores[i] === 100)
+    {
+        console.log('congrats, you got the top score!');
+        break;
+    }
+}
+
+// switch statements
+const grade = 'D';
+
+if(grade === 'A'){
+
+}
+else if(grade === 'B')
+{
     
+}
+else if(grade === 'C')
+{
+
+}
+else if(grade === 'D')
+{
+
+}
+else if(grade === 'E')
+{
+
+}
+else
+{
+
+}
+
+const newGrade = 'D';
+switch(newGrade){
+    case 'A':
+        console.log('you got an A!');
+    case 'B':
+        console.log('you got a B!');
+    case 'C':
+        console.log('you got a C!');
+    case 'D':
+        console.log('you got an D!');
+    case 'E':
+        console.log('you got an E!');
+        break;
+        default:
+            console.log('not a valid grade');
+}
+
+// variables and block scope 
+let mynewerage = 30;
+if(true)
+{
+    // let age = 40;
+    let name = 'shaun';
+    console.log('inside 1st code block: ', age, name);
+if(true)
+{
+    console.log('inside 2nd code block: ', age);
+}
+}
+console.log('outside code block: ', age);
+
+//make programs for defining local and global scope please see to it once
+
+
+
     
-    
+

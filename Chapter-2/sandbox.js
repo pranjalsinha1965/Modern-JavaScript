@@ -175,11 +175,12 @@ console.log(result);
 
 console.log(result, typeof result);
 // let myNumbersResult = Boolean(0);
-let myNumbersResukt = Boolean('0');
+let myNumbersResult = Boolean('0');
 console.log(result, typeof result);
 
+// no character type in javascript they all come under strings
 
-
+// There`s no separate data type for fractions and these thongs are treated as numbers datatype.
 
 
 
